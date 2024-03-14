@@ -13,7 +13,7 @@ class Chatbot:
         return random.choice(greetings)
 
     def respond(self, message):
-    responses = {
+        responses = {
         "how are you": "I'm just a program, so I don't have feelings, but thanks for asking!",
         "what's your name": "I'm {}.".format(self.name),
         "what are you doing": "I'm here to assist you. How can I help?",
@@ -186,8 +186,8 @@ class Chatbot:
         "what's the largest marine animal in the world": "The largest marine animal is the blue whale, which is also the largest animal to have ever existed.",
         "what's the smallest marine animal in the world": "The smallest marine animal is difficult to determine, as there are many tiny organisms in the ocean.",
         "what's the largest flying animal in the world": "The largest flying animal is the wandering albatross, which has a wingspan of up to 11 feet (3.4 meters).",
-        "what's the smallest flying animal in the world": "The smallest flying animal is the bumblebee bat, also known as Kitti's hog-nosed bat."
-        "default": "I'm sorry, I don't understand. Can you please rephrase?"
+        "what's the smallest flying animal in the world": "The smallest flying animal is the bumblebee bat, also known as Kitti's hog-nosed bat.",
+        "default": "I'm sorry, I don't understand. Can you please rephrase?",
         "add": "The sum of {} and {} is {}.",
         "subtract": "The difference between {} and {} is {}.",
         "multiply": "The product of {} and {} is {}.",
@@ -239,7 +239,7 @@ class Chatbot:
         "average speed": "The average speed for traveling {} km in {} hours is {} km/h."
         
     }
-    return responses.get(message.lower(), responses['default'])
+        return responses.get(message.lower(), responses['default'])
 
 
 # Main program
